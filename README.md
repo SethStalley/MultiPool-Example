@@ -24,3 +24,6 @@ Use the following settings when you install the databases locally if you want to
 * **url**: `https://localhost:5500/em`
 * **user**: `root`
 * **password**: `Oracle123`
+* Must add the following path variables (edit were apropiate):
+  * `set OCI_INC_DIR=C:\app\oracle\product\12.1.0\dbhome_1\OCI\include`
+  * `set OCI_LIB_DIR=C:\app\oracle\product\12.1.0\dbhome_1\OCI\lib\MSVC`

@@ -18,15 +18,12 @@ console.log("SQL Pool is Open");
 
 module.exports = {
   query : function(queryString, result){
-    //initiate pool
-    
+
         var request = new sql.Request(pool);
-        request.query(queryString).then(function(result) {
-            return result;
-        }).catch(function(err) {
-            console.log(err);
+        request.query(queryString, function(err,recordset) {
+            console.log('SQL connected as id ' + recordset[0].session_id)
+            return result(recordset);
         });
-    
  
   }
 };

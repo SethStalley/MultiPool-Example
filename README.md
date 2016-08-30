@@ -4,6 +4,9 @@
 * Min: `0`
 * Max: `10`
 
+## Oracle
+* Min: `10`
+* Max: `40`
 
 # Configuration
 
@@ -21,9 +24,9 @@ Use the following settings when you install the databases locally if you want to
   * **schema**: `pool_test`
 
 ## Oracle Database
-* **url**: `https://localhost:5500/em`
-* **user**: `root`
+* **url**: `` ;Blank means to use local default DB
+* **user**: `SYSTEM`
 * **password**: `Oracle123`
 * Must add the following path variables (edit were apropiate):
-  * `set OCI_INC_DIR=C:\app\oracle\product\12.1.0\dbhome_1\OCI\include`
-  * `set OCI_LIB_DIR=C:\app\oracle\product\12.1.0\dbhome_1\OCI\lib\MSVC`
+  * `set OCI_INC_DIR=C:\installclient\OCI\include`
+  * `set OCI_LIB_DIR=C:\oracle\intallclient\OCI\lib\MSVC`

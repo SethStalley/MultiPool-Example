@@ -26,7 +26,7 @@ app.use(express.static(__dirname + '/public'));
   Include all configurations scripts.
 */
 var mysql  = require('./config/mysql');
-//var oracle = require('./config/oracle');
+var oracle = require('./config/oracle');
 var sql = require('./config/sql');
 
 /*
@@ -36,6 +36,7 @@ var sql = require('./config/sql');
 require('./routes/index')(app);
 require('./routes/mysqlRequests')(app, mysql);
 require('./routes/sqlRequests')(app, sql);
+require('./routes/oracleRequests')(app,oracle);
 
 
 

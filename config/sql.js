@@ -6,7 +6,7 @@ var config = {
     server: 'localhost',
     database: 'pool_test',
     pool: {
-        max: 25,
+        max: 40,
         min: 10,
         idleTimeoutMillis: 30000
     }

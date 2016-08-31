@@ -1,8 +1,11 @@
 #Our Pool Setup
 
+## Mysql
+* Max: `40`
+
 ## SQL 
-* Min: `0`
-* Max: `10`
+* Min: `10`
+* Max: `40`
 
 ## Oracle
 * Min: `10`
